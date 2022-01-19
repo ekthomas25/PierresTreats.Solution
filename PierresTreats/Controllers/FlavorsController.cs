@@ -18,5 +18,19 @@ namespace PierresTreats.Controllers
     {
       return View(_db.Flavors.ToList());
     }
+
+
+    public ActionResult Create()
+    {
+      return View();
+    }
+
+[HttpPost]
+    public ActionResult Create(Flavor flavor)
+    {
+      _db.Flavors.Add(flavor);
+      _db.SaveChanges();
+      return RedirectToAction("Index");
+    }
   }
 }
