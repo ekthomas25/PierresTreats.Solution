@@ -8,6 +8,15 @@ namespace PierresTreats.Controllers
 {
   public class TreatsController : Controller
   {
+    private readonly PierresTreatsContext _db;
+    public TreatsController(PierresTreatsContext db)
+    {
+      _db = db;
+    }
 
+    public ActionResult Index()
+    {
+      return View(_db.Treats.ToList());
+    }
   }
 }
