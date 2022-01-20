@@ -12,6 +12,7 @@ namespace PierresTreats.Models
     public int FlavorId { get; set; }
     public string Name { get; set; }
     public string Type { get; set; }
+    public virtual ApplicationUser User { get; set; }
     public virtual ICollection<FlavorTreat> JoinEntities { get; set; }
   }
 }
