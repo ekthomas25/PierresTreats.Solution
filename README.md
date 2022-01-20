@@ -1,8 +1,8 @@
-# Application Name
+# Pierre's Sweet and Savory Treats
 
 #### By Liz Thomas
 
-#### _Short Description_
+#### _An app to track a bakery's treats and flavors._
 
 ## Technologies Used
 
@@ -17,10 +17,11 @@
 * _Node_
 * _SQL_
 * _MySQL Workbench_
+* _Identity_
 
 ## Description
 
-_This web application was created for..._
+_This web application was created for Pierre's Bakery. It lists the available bakery items and flavors and allows the user to create an account using Identity and add treats or flavors using an MVC app with a many to many relationship._
 
 ## Setup/Installation Requirements
 
@@ -34,23 +35,25 @@ _This web application was created for..._
 ### File Setup
 
 * _Once you have VSCode, Node, and GIT set up, you will need to open up your terminal, navigate to your Desktop and type the command:_
-`git clone https://github.com/ekthomas25/TEMPLATE.Solution.git`
+`git clone https://github.com/ekthomas25/PierresTreats.Solution.git`
 
 * _This will clone the repository to your desktop and you will be able to then open the folder in VSCode._
-* _Open the terminal in VSCode and navigate to_ `TEMPLATE.Solution > PROJECTFILE` _and type the following command:_ `touch appsettings.json`
+* _Open the terminal in VSCode and navigate to_ `PierresTreats.Solution > PierresTreats` _and type the following command:_ `touch appsettings.json`
 * _Copy and paste the following code into the new file:_
 ```
 {
   "ConnectionStrings": {
-      "DefaultConnection": "Server=localhost;Port=3306;database=TEMPLATE_DATABASE;uid=root;pwd=[YOUR PASSWORD HERE];"
+      "DefaultConnection": "Server=localhost;Port=3306;database=liz_thomas;uid=root;pwd=[YOUR PASSWORD HERE];"
   }
 }
-* _You will need to input your own password where it says_ [YOUR PASSWORD HERE]
 ```
+* _You will need to input your own password where it says_ [YOUR PASSWORD HERE]
+
 * Make sure you are in the project directory folder, run the command `dotnet ef database update`
 * Then run the command `dotnet restore` to install project dependencies
 * Then run the command `dotnet run` to run the project in the browser
 * Navigate to http://localhost:5000/ in your browser.
+* To add, edit, or delete a treat or flavor, you must register and log in.
 
 ## Known Bugs
 
