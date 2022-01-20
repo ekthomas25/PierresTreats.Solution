@@ -2,4 +2,44 @@
   Layout = "_Layout";
 }
 
+@using PierresTreats.Models
+
 Welcome!
+
+<div class="container">
+  <div class="row">
+
+    <div class="col-6">
+      <div class="splash">
+        <h3>Pierre's Treats:</h3>
+        @if(Model.Treats.Count == 0)
+        {
+          <p>Pierre currently has no treats to offer.</p>
+        }
+        else
+        {
+          @foreach(Treat treat in Model.Treats)
+          {
+            <li>@Html.ActionLink($"{treat.Name}", "Details", "Treats", new { id = treat.TreatId })</li>
+          }
+        }
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="splash">
+        <h3>Current Flavors:</h3>
+        @if(Model.Flavors.Count == 0)
+        {
+          <p>Pierre is only offering plain treats today.</p>
+        }
+        else
+        {
+          @foreach(Flavor flavor in  Model.Flavors)
+          {
+            <li>@Html.ActionLink($"{flavor.Name}", "Details", "Flavors", new { id = flavor.FlavorId })</li>
+          }
+        }
+      </div>
+    </div>
+  </div>
+</div>
