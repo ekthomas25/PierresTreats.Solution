@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Lobster&display=swap');
+
+body {
+  background-color: #FEC5BB;
+  font-family: monospace;
+}
+
+h2 {
+  font-family: 'Concert One', cursive;
+}
+
+h3 {
+  font-family: monospace;
+}
+
+a {
+  color: rgb(68, 88, 143);
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav {
+  background-color: #FAE1DD;
+}
+
+#nav-ul {
+  display: flex;
+}
+
+#nav-logo {
+  margin-left: .5rem;
+  font-size: 1.5rem;
+  font-family: 'Lobster', cursive;
+}
+
+#nav-li-2 {
+  margin-left:auto;
+}
+
+nav li{
+  padding-right: 1em;
+  padding-top: 1em;
+}
+
+nav li a {
+  color: rgb(20, 22, 18);
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-family: 'Concert One', cursive;
+}
+
+nav li a:hover {
+  border-top: .25em dotted rgb(49, 54, 45);
+  color: rgb(49, 54, 45);
+  font-weight: 400;
+}
+
+.splash {
+  background-color: rgb(255, 234, 188);
+  padding: 1.5rem;
+  border-radius: 25px;
+}
