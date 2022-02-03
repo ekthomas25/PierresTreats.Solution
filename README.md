@@ -27,7 +27,6 @@ _This web application was created for Pierre's Bakery. It lists the available ba
 ### Your computer will need to have the following installed and set up:
 * _[GIT](https://docs.github.com/en/get-started/quickstart/set-up-git)_
 * _[Visual Studio Code](https://code.visualstudio.com/download)_
-* _[Node](https://nodejs.dev/learn/how-to-install-nodejs)_
 * _.NET - [Mac](https://dotnet.microsoft.com/download/dotnet/thank-you/sdk-5.0.401-macos-x64-installer) or [Windows](https://dotnet.microsoft.com/download/dotnet/thank-you/sdk-5.0.401-windows-x64-installer)_
 * _[MySQL Workbench](https://dev.mysql.com/downloads/file/?id=484391)_
 
