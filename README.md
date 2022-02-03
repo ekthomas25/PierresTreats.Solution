@@ -14,8 +14,7 @@
 * _ASP.NET_
 * _Entity_
 * _Razor_
-* _Node_
-* _SQL_
+* _MySQL_
 * _MySQL Workbench_
 * _Identity_
 
